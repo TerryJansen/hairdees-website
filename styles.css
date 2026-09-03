@@ -16,9 +16,18 @@
     --cream: #f7f1ea;
     --cream-light: #fbf7f2;
     --white: #ffffff;
+    --terracotta: #c47a5a;
+    --terracotta-light: #d99878;
+    --terracotta-dark: #a85f3e;
+    --sage: #a8b5a0;
+    --sage-light: #c4d0bc;
+    --sage-dark: #8a9a82;
+    --warm-rose: #e8d5c4;
+    --warm-rose-light: #f0e0d2;
     --shadow-sm: 0 2px 12px rgba(42, 37, 32, 0.06);
     --shadow-md: 0 6px 28px rgba(42, 37, 32, 0.10);
     --shadow-lg: 0 12px 48px rgba(42, 37, 32, 0.16);
+    --shadow-warm: 0 6px 28px rgba(196, 122, 90, 0.15);
     --radius: 14px;
     --radius-sm: 10px;
     --transition: all 0.35s ease;
@@ -180,15 +189,15 @@ body {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(165deg, #faf6f0 0%, #f5ece0 40%, #f0e6d6 100%);
+    background: linear-gradient(165deg, #faf6f0 0%, #f5e6d8 30%, #f0dbcc 60%, #f5ece0 100%);
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse at 30% 70%, rgba(213, 178, 148, 0.22) 0%, transparent 55%),
-        radial-gradient(ellipse at 70% 30%, rgba(213, 178, 148, 0.15) 0%, transparent 50%);
+        radial-gradient(ellipse at 30% 70%, rgba(196, 122, 90, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 70% 30%, rgba(168, 181, 160, 0.10) 0%, transparent 50%);
     z-index: 0;
 }
 
@@ -321,7 +330,7 @@ section {
 
 .section-tag {
     display: inline-block;
-    color: var(--gold-dark);
+    color: var(--terracotta);
     font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -413,7 +422,7 @@ section {
 }
 
 .about-text em {
-    color: var(--gold-dark);
+    color: var(--terracotta);
     font-style: italic;
 }
 
@@ -434,7 +443,7 @@ section {
     font-family: var(--font-script);
     font-style: italic;
     font-size: 1.8rem;
-    color: var(--gold-dark);
+    color: var(--terracotta);
 }
 
 /* ===== Salon Banner ===== */
@@ -557,15 +566,15 @@ section {
 
 .service-card:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--gold);
+    box-shadow: var(--shadow-warm);
+    border-color: var(--terracotta);
 }
 
 .service-icon {
     width: 28px;
     height: 28px;
     margin: 0 auto 16px;
-    color: var(--gold);
+    color: var(--terracotta);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,13 +610,13 @@ a.service-card {
     margin-top: 14px;
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--gold-dark);
+    color: var(--terracotta);
     letter-spacing: 0.02em;
     transition: var(--transition);
 }
 
 a.service-card:hover .service-link {
-    color: var(--gold);
+    color: var(--terracotta-dark);
     transform: translateX(3px);
 }
 
@@ -638,7 +647,7 @@ a.service-card:hover .service-link {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    color: var(--gold);
+    color: var(--terracotta);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -724,7 +733,7 @@ a.service-card:hover .service-link {
     width: 26px;
     height: 26px;
     margin: 0 auto 12px;
-    color: var(--gold);
+    color: var(--terracotta);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -760,7 +769,7 @@ a.service-card:hover .service-link {
 .contact-action {
     display: inline-block;
     margin-top: 10px;
-    color: var(--gold-dark);
+    color: var(--terracotta);
     font-size: 0.85rem;
     font-weight: 500;
 }
@@ -1069,13 +1078,13 @@ a.service-card:hover .service-link {
     gap: 14px;
     margin-bottom: 24px;
     padding-bottom: 16px;
-    border-bottom: 2px solid var(--gold);
+    border-bottom: 2px solid var(--terracotta);
 }
 
 .category-icon {
     width: 22px;
     height: 22px;
-    color: var(--gold);
+    color: var(--terracotta);
     font-weight: 300;
     display: flex;
     align-items: center;
