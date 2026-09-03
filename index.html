@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairdees — Kapsalon in Vlaardingen</title>
+    <meta name="description" content="Hairdees is een warme en uitnodigende kapsalon in Vlaardingen. Knippen, kleuren, wassen, föhnen en behandelingen — uitsluitend op afspraak.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">
+            <img src="logo.png" alt="Hairdees logo" class="nav-logo-img" onerror="this.style.display='none'">
+            <span class="nav-logo-text">Hairdees</span>
+        </a>
+        <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#diensten">Diensten</a></li>
+            <li><a href="#over-ons">Over ons</a></li>
+            <li><a href="#locatie">Locatie</a></li>
+            <li><a href="#contact" class="nav-cta">Maak een afspraak</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge">✂ Kapsalon in Vlaardingen</div>
+        <h1 class="hero-title">Welkom bij <span class="accent">Hairdees</span></h1>
+        <p class="hero-subtitle">Een warme plek waar jouw haar centraal staat. Knippen, kleuren, wassen en föhnen — geheel op maat, uitsluitend op afspraak.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Maak een afspraak</a>
+            <a href="#diensten" class="btn btn-secondary">Bekijk diensten</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section id="diensten" class="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Onze diensten</span>
+            <h2>Alles onder één dak</h2>
+            <p>Van een eenvoudige knipbeurt tot een volledige transformatie — wij verzorgen je haar met zorg en vakkundigheid.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">✂️</div>
+                <h3>Knippen</h3>
+                <p>Op maat geknipt voor mannen en vrouwen. Afgestemd op je gezichtsvorm en levensstijl.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Kleuren</h3>
+                <p>Van subtiale highlights tot een gedurfde kleurverandering. Met hoogwaardige producten die je haar verzorgen.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧴</div>
+                <h3>Wassen & Föhnen</h3>
+                <p>Een ontspannen wasbeurt gevolgd door een professionele föhn-styling. Klaar voor elke gelegenheid.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💆</div>
+                <h3>Behandelingen</h3>
+                <p>Haarverzorgingsbehandelingen, oliebehandelingen en meer. Geef je haar de aandacht die het verdient.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="over-ons" class="about">
+    <div class="container about-grid">
+        <div class="about-text">
+            <span class="section-tag">Over Hairdees</span>
+            <h2>E plek waar jij je thuis voelt</h2>
+            <p>Bij Hairdees draait alles om persoonlijke aandacht. Wij nemen de tijd om naar je wensen te luisteren en je haar precies zo te stylen als jij het wilt. Geen haast, geen wachtrijen — alleen jij en onze kundige handen.</p>
+            <p>Of je nu komt voor een onderhoud van je huidige look of voor iets helemaal nieuws: wij zorgen ervoor dat je met een goed gevoel en prachtig haar naar buiten stapt.</p>
+            <ul class="about-list">
+                <li>✓ Uitsluitend op afspraak — alle tijd voor jou</li>
+                <li>✓ Voor mannen en vrouwen</li>
+                <li>✓ Persoonlijk advies bij elke behandeling</li>
+                <li>✓ Hoogwaardige, haarvriendelijke producten</li>
+            </ul>
+        </div>
+        <div class="about-card">
+            <div class="about-card-icon">📅</div>
+            <h3>Alleen op afspraak</h3>
+            <p>Wij werken uitsluitend op afspraak, zodat wij jou 100% aandacht kunnen geven. Bel of mail ons om een geschikte tijd te plannen.</p>
+            <a href="#contact" class="btn btn-primary">Plan je afspraak</a>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section id="locatie" class="location">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Waar vind je ons</span>
+            <h2>Locatie</h2>
+            <p>Je vindt ons in de De nieuwe watertoren in Vlaardingen.</p>
+        </div>
+        <div class="location-card">
+            <div class="location-info">
+                <div class="location-icon">📍</div>
+                <div class="location-text">
+                    <h3>Hairdees</h3>
+                    <p>De nieuwe watertoren<br>
+                    Van Linden van den Heuvellweg 2<br>
+                    3134 AE Vlaardingen</p>
+                </div>
+            </div>
+            <div class="location-map">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=4.34%2C51.91%2C4.37%2C51.93&layer=mapnik&marker=51.918,4.355"
+                    width="100%" height="280" style="border:0; border-radius:16px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Contact</span>
+            <h2>Maak een afspraak</h2>
+            <p>Wij werken uitsluitend op afspraak. Bel of mail ons — wij plannen graag een geschikte tijd voor je in.</p>
+        </div>
+        <div class="contact-cards">
+            <a href="tel:0624318233" class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Bel ons</h3>
+                <p>06 24 31 82 33</p>
+                <span class="contact-action">Tik om te bellen</span>
+            </a>
+            <div class="contact-card">
+                <div class="contact-icon">🗓️</div>
+                <h3>Op afspraak</h3>
+                <p>Flexibele tijden<br>Geen vaste openingstijden</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Adres</h3>
+                <p>Van Linden van den Heuvellweg 2<br>3134 AE Vlaardingen</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <img src="logo.png" alt="Hairdees" class="footer-logo" onerror="this.style.display='none'">
+            <span class="footer-name">Hairdees</span>
+        </div>
+        <div class="footer-info">
+            <p>Kapsalon voor mannen en vrouwen — Vlaardingen</p>
+            <p>Uitsluitend op afspraak · <a href="tel:0624318233">06 24 31 82 33</a></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('nav-open');
+}
+// Close menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('nav-open');
+    });
+});
+</script>
+
+</body>
+</html>
