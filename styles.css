@@ -452,7 +452,7 @@ section {
 .signature-name {
     font-family: var(--font-script);
     font-style: italic;
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: var(--terracotta);
     margin-bottom: 20px;
     line-height: 1;
@@ -938,6 +938,10 @@ a.service-card:hover .service-link {
     .about-signature {
         text-align: center;
         margin-top: 60px;
+    }
+
+    .signature-name {
+        font-size: 2.4rem;
     }
 
     .location-card {
