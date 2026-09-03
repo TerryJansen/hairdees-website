@@ -1,20 +1,24 @@
-# Hairdees — Kapsalon in Vlaardingen
+# Hairdees — Dé kapster in Vlaardingen
 
-Website voor Hairdees, een kapsalon voor mannen en vrouwen in Vlaardingen.
+Website voor Hairdees, de kapsalon van Desirée Kievits in De nieuwe Watertoren, Vlaardingen.
+
+## Over
+Desirée Kievits is 36 jaar werkzaam in het kappersvak. Na 30 jaar in Rotterdam is ze nu gevestigd in De nieuwe Watertoren in Vlaardingen — een unieke locatie op de derde verdieping met prachtig uitzicht.
 
 ## Diensten
-- Knippen
+- Knippen (mannen en vrouwen)
 - Kleuren
 - Wassen & Föhnen
 - Behandelingen
 
 ## Contact
-- **Adres:** De nieuwe watertoren, Van Linden van den Heuvellweg 2, 3134 AE Vlaardingen
+- **Adres:** De nieuwe Watertoren, Van Linden van den Heuvellweg 2, 3134 AE Vlaardingen
+- **Navigatie:** Kleine Buitenweide, Vlaardingen
 - **Telefoon:** 06 24 31 82 33
 - **Afspraken:** Uitsluitend op afspraak
 
-## Website
-Deze website is gebouwd met HTML en CSS en wordt gehost via GitHub Pages.
+## Techniek
+Statische website gebouwd met HTML en CSS. Gehost via GitHub Pages.
 
-## Logo
-Vervang `logo.png` in de hoofdmap door je eigen logo om het op de website te tonen.
+## Live
+https://terryjansen.github.io/hairdees-website/
