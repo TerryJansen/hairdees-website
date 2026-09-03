@@ -491,6 +491,7 @@ section {
 
 .lanza-content {
     max-width: 620px;
+    margin: 0 auto;
 }
 
 .lanza-logo-wrap {
@@ -500,11 +501,11 @@ section {
 }
 
 .lanza-logo {
-    height: 72px;
+    height: 96px;
     width: auto;
     display: block;
     margin: 0 auto;
-    opacity: 0.85;
+    opacity: 0.9;
     transition: var(--transition);
 }
 
@@ -965,11 +966,7 @@ a.service-card:hover .service-link {
     }
 
     .lanza-logo {
-        height: 48px;
-    }
-
-    .container {
-        padding: 0 24px;
+        height: 32px;
     }
 
     .section-header {
@@ -1028,7 +1025,7 @@ a.service-card:hover .service-link {
     }
 
     .lanza-logo {
-        height: 40px;
+        height: 28px;
     }
 }
 
