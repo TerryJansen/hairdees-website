@@ -940,7 +940,7 @@ a.service-card:hover .service-link {
 
     .about-signature {
         text-align: center;
-        margin-top: 48px;
+        margin-top: 60px;
     }
 
     .location-card {
@@ -962,17 +962,17 @@ a.service-card:hover .service-link {
         text-align: center;
     }
 
-    .about-signature {
-        text-align: center;
-        margin-top: 28px;
+    .about {
+        padding-bottom: 24px;
     }
 
-    .about-signature::after {
-        margin: 20px auto 0;
+    .salon-banner {
+        margin-top: 0;
     }
 
-    .signature-name {
-        font-size: 2rem;
+    .salon-banner-overlay {
+        align-items: center;
+        padding: 40px 28px;
     }
 
     section {
