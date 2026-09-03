@@ -470,40 +470,46 @@ section {
 .salon-banner {
     position: relative;
     width: 100%;
+    height: 600px;
     overflow: hidden;
 }
 
 .salon-banner img {
     width: 100%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* ===== Quote Section ===== */
-.quote-section {
-    padding: 80px 28px;
-    text-align: center;
-    background: var(--white);
+.salon-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(42, 37, 32, 0.25) 0%, rgba(42, 37, 32, 0.55) 50%, rgba(42, 37, 32, 0.75) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 28px;
 }
 
-.quote-text {
+.salon-banner-content {
+    max-width: 640px;
+    text-align: center;
+}
+
+.salon-banner-quote {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: clamp(1.3rem, 3vw, 1.9rem);
-    font-weight: 400;
-    color: var(--dark);
-    line-height: 1.6;
-    max-width: 680px;
-    margin: 0 auto 16px;
-    letter-spacing: -0.01em;
+    font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.5;
+    margin-bottom: 14px;
 }
 
-.quote-author {
+.salon-banner-attr {
     font-family: var(--font-script);
     font-style: italic;
-    font-size: 1.3rem;
-    color: var(--terracotta);
+    font-size: 1.5rem;
+    color: var(--terracotta-light);
 }
 
 /* ===== Lanza Products ===== */
@@ -968,11 +974,7 @@ a.service-card:hover .service-link {
     }
 
     .salon-banner {
-        margin-top: 0;
-    }
-
-    .salon-banner img {
-        height: 300px;
+        height: 400px;
     }
 
     .quote-section {
@@ -1075,12 +1077,8 @@ a.service-card:hover .service-link {
         text-align: center;
     }
 
-    .salon-banner img {
-        height: 240px;
-    }
-
-    .quote-section {
-        padding: 48px 20px;
+    .salon-banner {
+        height: 300px;
     }
 }
 
