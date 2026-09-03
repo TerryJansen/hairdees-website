@@ -1361,11 +1361,6 @@ a.service-card:hover .service-link {
     font-weight: 600;
 }
 
-.nav-active::after {
-    width: 100% !important;
-    left: 0 !important;
-}
-
 /* Responsive pricing */
 @media (max-width: 860px) {
     .pricing .container {
