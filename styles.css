@@ -951,6 +951,19 @@ a.service-card:hover .service-link {
         text-align: center;
     }
 
+    .about-signature {
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    .about-signature::after {
+        margin: 20px auto 0;
+    }
+
+    .signature-name {
+        font-size: 2rem;
+    }
+
     section {
         padding: 56px 0;
     }
