@@ -925,11 +925,22 @@ a.service-card:hover .service-link {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+        padding-top: 20px;
     }
 
     .about-photo img {
         max-width: 100%;
         border-radius: var(--radius);
+    }
+
+    .about-signature {
+        text-align: center;
+        margin-top: 48px;
     }
 
     .location-card {
