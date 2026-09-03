@@ -873,13 +873,13 @@ a.service-card:hover .service-link {
 
     .nav-links {
         position: fixed;
-        top: 76px;
+        top: 72px;
         left: 0;
         width: 100%;
         background: var(--cream-light);
         flex-direction: column;
-        padding: 28px;
-        gap: 22px;
+        padding: 24px 28px;
+        gap: 20px;
         transform: translateY(-200%);
         transition: transform 0.35s ease;
         border-bottom: 1px solid rgba(213, 178, 148, 0.15);
@@ -890,19 +890,29 @@ a.service-card:hover .service-link {
         transform: translateY(0);
     }
 
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 36px;
+        gap: 32px;
+    }
+
+    .about-photo img {
+        max-width: 100%;
+        border-radius: var(--radius);
     }
 
     .location-card {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .footer-content {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 24px;
     }
 
     .footer-left {
@@ -914,19 +924,111 @@ a.service-card:hover .service-link {
     }
 
     section {
-        padding: 64px 0;
+        padding: 56px 0;
     }
 
     .hero {
-        min-height: 90vh;
+        min-height: 88vh;
+    }
+
+    .hero-content {
+        padding: 100px 24px 60px;
     }
 
     .brand-name {
-        font-size: clamp(2.2rem, 10vw, 3.5rem);
+        font-size: clamp(2rem, 9vw, 3rem);
+        letter-spacing: 0.08em;
+    }
+
+    .hero-tagline {
+        font-size: 1.4rem;
+    }
+
+    .hero-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 
     .salon-banner {
-        height: 340px;
+        height: 300px;
+    }
+
+    .salon-banner-quote {
+        font-size: 1.15rem;
+    }
+
+    .lanza {
+        padding: 56px 0;
+    }
+
+    .lanza-logo {
+        height: 48px;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .price-category {
+        margin-bottom: 36px;
+    }
+
+    .quote-section {
+        padding: 56px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 100px 20px 56px;
+    }
+
+    .brand-name {
+        font-size: 1.8rem;
+        letter-spacing: 0.06em;
+    }
+
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .salon-banner {
+        height: 240px;
+    }
+
+    .lanza-logo {
+        height: 40px;
     }
 }
 
