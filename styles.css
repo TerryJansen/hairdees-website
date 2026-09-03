@@ -1111,21 +1111,47 @@ a.service-card:hover .service-link {
 
 /* ===== Pricing ===== */
 .pricing {
-    padding: 60px 0 100px;
+    padding: 80px 0 100px;
+    background: var(--cream-light);
 }
 
 .price-category {
-    max-width: 760px;
-    margin: 0 auto 48px;
+    max-width: 820px;
+    margin: 0 auto 40px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 36px 40px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(213, 178, 148, 0.10);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.price-category.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .category-header {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 2px solid var(--terracotta);
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(213, 178, 148, 0.2);
+    position: relative;
+}
+
+.category-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--terracotta);
+    border-radius: 2px;
 }
 
 .category-icon {
@@ -1156,24 +1182,27 @@ a.service-card:hover .service-link {
 .price-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .price-item {
     display: flex;
     align-items: baseline;
-    padding: 16px 20px;
+    padding: 14px 16px;
     border-radius: var(--radius-sm);
     transition: var(--transition);
+    border: 1px solid transparent;
 }
 
 .price-item:hover {
     background: var(--cream);
+    border-color: rgba(213, 178, 148, 0.15);
+    transform: translateX(4px);
 }
 
 .price-item-highlight {
-    background: rgba(213, 178, 148, 0.08);
-    border: 1px solid rgba(213, 178, 148, 0.2);
+    background: rgba(196, 122, 90, 0.06);
+    border: 1px solid rgba(196, 122, 90, 0.2);
 }
 
 .price-name {
@@ -1191,7 +1220,7 @@ a.service-card:hover .service-link {
 
 .price-dots {
     flex: 1;
-    border-bottom: 1px dotted rgba(213, 178, 148, 0.35);
+    border-bottom: 1px dotted rgba(213, 178, 148, 0.3);
     margin: 0 12px;
     position: relative;
     top: -4px;
@@ -1206,33 +1235,60 @@ a.service-card:hover .service-link {
 
 .price-cta {
     text-align: center;
-    margin-top: 56px;
-    padding: 48px 28px;
-    background: var(--white);
+    margin: 56px auto 0;
+    max-width: 700px;
+    padding: 56px 40px;
+    background: linear-gradient(165deg, var(--dark) 0%, var(--dark-soft) 100%);
     border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(213, 178, 148, 0.12);
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
 }
 
-.price-cta p {
-    color: var(--warm-grey);
+.price-cta.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.price-cta-intro {
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
+    font-weight: 300;
 }
 
-.price-cta .btn {
-    margin-bottom: 16px;
+.price-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--terracotta);
+    color: var(--white);
+    padding: 16px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: var(--transition);
+    letter-spacing: 0.02em;
+}
+
+.price-cta-btn:hover {
+    background: var(--terracotta-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(196, 122, 90, 0.4);
 }
 
 .price-cta-note {
-    font-size: 0.9rem !important;
-    color: var(--warm-grey-light) !important;
-    margin-bottom: 0 !important;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 20px;
+    font-weight: 300;
 }
 
 /* Nav active */
 .nav-active {
-    color: var(--gold-dark) !important;
+    color: var(--terracotta) !important;
     font-weight: 600;
 }
 
@@ -1241,11 +1297,16 @@ a.service-card:hover .service-link {
 }
 
 /* Responsive pricing */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .price-category {
+        padding: 24px 20px;
+        margin-bottom: 28px;
+    }
+
     .price-item {
         flex-direction: column;
         gap: 4px;
-        padding: 14px 16px;
+        padding: 12px 14px;
     }
 
     .price-dots {
@@ -1258,6 +1319,10 @@ a.service-card:hover .service-link {
 
     .price-value {
         font-size: 1.2rem;
-        color: var(--gold-dark);
+        color: var(--terracotta);
+    }
+
+    .price-cta {
+        padding: 40px 24px;
     }
 }
