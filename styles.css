@@ -166,15 +166,15 @@ body {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(160deg, #f7f1ea 0%, #f2e8dc 40%, #ebe0d0 100%);
+    background: linear-gradient(165deg, #2a2520 0%, #3d3328 35%, #4a3d30 70%, #38302a 100%);
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse at 25% 75%, rgba(213, 178, 148, 0.18) 0%, transparent 55%),
-        radial-gradient(ellipse at 75% 25%, rgba(213, 178, 148, 0.10) 0%, transparent 50%);
+        radial-gradient(ellipse at 30% 70%, rgba(213, 178, 148, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 30%, rgba(213, 178, 148, 0.08) 0%, transparent 45%);
 }
 
 .hero-content {
@@ -185,31 +185,33 @@ body {
 }
 
 .hero-logo {
-    max-width: 380px;
+    max-width: 340px;
     width: 100%;
     height: auto;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
+    animation: fadeInUp 0.9s ease forwards;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
 }
 
 .hero-tagline {
     font-family: var(--font-script);
     font-style: italic;
-    font-size: 1.6rem;
-    color: var(--gold-dark);
+    font-size: 1.7rem;
+    color: var(--gold);
     margin-bottom: 8px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.15s forwards;
+    animation: fadeInUp 0.9s ease 0.15s forwards;
+    text-shadow: 0 2px 12px rgba(213, 178, 148, 0.25);
 }
 
 .hero-divider {
-    width: 60px;
+    width: 80px;
     height: 1px;
-    background: var(--gold);
-    margin: 0 auto 28px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 32px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.3s forwards;
+    animation: fadeInUp 0.9s ease 0.3s forwards;
 }
 
 .hero-title {
@@ -217,22 +219,22 @@ body {
     font-size: clamp(1.8rem, 4.5vw, 2.8rem);
     font-weight: 400;
     line-height: 1.25;
-    margin-bottom: 20px;
-    color: var(--dark);
+    margin-bottom: 22px;
+    color: var(--cream);
     letter-spacing: -0.01em;
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.4s forwards;
+    animation: fadeInUp 0.9s ease 0.4s forwards;
 }
 
 .hero-subtitle {
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.8;
     max-width: 520px;
-    margin: 0 auto 36px;
-    color: var(--warm-grey);
+    margin: 0 auto 38px;
+    color: rgba(247, 241, 234, 0.65);
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.55s forwards;
+    animation: fadeInUp 0.9s ease 0.55s forwards;
 }
 
 .hero-buttons {
@@ -241,7 +243,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.7s forwards;
+    animation: fadeInUp 0.9s ease 0.7s forwards;
 }
 
 @keyframes fadeInUp {
@@ -276,14 +278,14 @@ body {
 
 .btn-ghost {
     background: transparent;
-    border: 1px solid var(--dark);
-    color: var(--dark);
+    border: 1px solid rgba(247, 241, 234, 0.4);
+    color: var(--cream);
 }
 
 .btn-ghost:hover {
-    border-color: var(--gold-dark);
-    color: var(--gold-dark);
-    background: rgba(213, 178, 148, 0.06);
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(213, 178, 148, 0.08);
 }
 
 /* ===== Sections ===== */
@@ -481,6 +483,26 @@ section {
     color: var(--warm-grey);
     font-size: 0.93rem;
     line-height: 1.6;
+}
+
+a.service-card {
+    text-decoration: none;
+    display: block;
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gold-dark);
+    letter-spacing: 0.02em;
+    transition: var(--transition);
+}
+
+a.service-card:hover .service-link {
+    color: var(--gold);
+    transform: translateX(3px);
 }
 
 /* ===== Location ===== */
@@ -751,20 +773,20 @@ section {
 .page-header {
     padding: 160px 0 60px;
     text-align: center;
-    background: linear-gradient(160deg, #f7f1ea 0%, #f2e8dc 40%, #ebe0d0 100%);
+    background: linear-gradient(165deg, #2a2520 0%, #3d3328 60%, #38302a 100%);
 }
 
 .page-header h1 {
     font-family: var(--font-serif);
     font-size: clamp(2.2rem, 5vw, 3.2rem);
     font-weight: 400;
-    color: var(--dark);
+    color: var(--cream);
     margin-bottom: 14px;
     letter-spacing: -0.01em;
 }
 
 .page-header p {
-    color: var(--warm-grey);
+    color: rgba(247, 241, 234, 0.6);
     font-size: 1.1rem;
     font-weight: 300;
     max-width: 480px;
