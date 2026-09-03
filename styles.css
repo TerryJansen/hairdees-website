@@ -503,11 +503,19 @@ section {
 }
 
 .service-icon {
-    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 18px;
     color: var(--gold);
-    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon svg {
+    width: 36px;
+    height: 36px;
     display: block;
-    font-weight: 300;
 }
 
 .service-card h3 {
@@ -568,8 +576,19 @@ a.service-card:hover .service-link {
 }
 
 .location-icon {
-    font-size: 1.6rem;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-icon svg {
+    width: 28px;
+    height: 28px;
+    display: block;
 }
 
 .location-text h3 {
@@ -643,8 +662,19 @@ a.service-card:hover .service-link {
 }
 
 .contact-icon {
-    font-size: 1.8rem;
-    margin-bottom: 14px;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 14px;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    width: 32px;
+    height: 32px;
+    display: block;
 }
 
 .contact-card h3 {
@@ -860,9 +890,20 @@ a.service-card:hover .service-link {
 }
 
 .category-icon {
-    font-size: 1.4rem;
+    width: 28px;
+    height: 28px;
     color: var(--gold);
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.category-icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
 .category-header h2 {
