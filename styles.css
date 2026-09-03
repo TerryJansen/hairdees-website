@@ -184,14 +184,21 @@ body {
     padding: 120px 28px 80px;
 }
 
-.hero-logo {
-    max-width: 340px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 16px;
+.hero-brand {
+    margin-bottom: 24px;
     opacity: 0;
     animation: fadeInUp 0.9s ease forwards;
-    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+}
+
+.brand-name {
+    font-family: var(--font-serif);
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-tagline {
@@ -199,10 +206,10 @@ body {
     font-style: italic;
     font-size: 1.7rem;
     color: var(--gold);
-    margin-bottom: 8px;
+    margin-bottom: 0;
     opacity: 0;
     animation: fadeInUp 0.9s ease 0.15s forwards;
-    text-shadow: 0 2px 12px rgba(213, 178, 148, 0.25);
+    text-shadow: 0 2px 12px rgba(213, 178, 148, 0.3);
 }
 
 .hero-divider {
@@ -760,8 +767,8 @@ a.service-card:hover .service-link {
         min-height: 90vh;
     }
 
-    .hero-logo {
-        max-width: 280px;
+    .brand-name {
+        font-size: clamp(2.2rem, 10vw, 3.5rem);
     }
 
     .salon-banner {
