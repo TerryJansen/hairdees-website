@@ -8,12 +8,11 @@
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Header -->
 <header class="site-header" id="siteHeader">
     <div class="header-inner">
         <a href="#top" class="header-logo" aria-label="Hairdees — naar boven">
@@ -21,29 +20,25 @@
         </a>
 
         <ul class="header-nav">
-            <li><a href="#diensten">Diensten</a></li>
             <li><a href="#over">Over Desirée</a></li>
+            <li><a href="#diensten">Diensten</a></li>
             <li><a href="tarieven.html">Tarieven</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="header-phone">
-            <a href="tel:+31624318233" class="header-phone-number">06 24 31 82 33</a>
-            <a href="tel:+31624318233" class="header-cta">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Bellen
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobileNav">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+        <a href="tel:+31624318233" class="header-call">06 24 31 82 33</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobileNav">
+            <span></span><span></span><span></span>
+        </button>
     </div>
+
     <ul class="mobile-nav" id="mobileNav">
-        <li><a href="#diensten">Diensten</a></li>
         <li><a href="#over">Over Desirée</a></li>
+        <li><a href="#diensten">Diensten</a></li>
         <li><a href="tarieven.html">Tarieven</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="tel:+31624318233">Bel 06 24 31 82 33</a></li>
+        <li><a href="tel:+31624318233">06 24 31 82 33</a></li>
     </ul>
 </header>
 
@@ -52,74 +47,47 @@
     <img src="salon-interior.jpg" alt="De salon van Hairdees in De nieuwe Watertoren" class="hero-photo" fetchpriority="high">
     <div class="hero-scrim"></div>
     <div class="hero-inner">
-        <span class="hero-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.5L5.7 20l2.3-7-6-4.4h7.6z"/></svg>
-            36 jaar vakmanschap
-        </span>
-        <p class="hero-eyebrow">Kapsalon in Vlaardingen</p>
-        <h1>Alle tijd, alleen voor jou.</h1>
-        <p class="hero-sub">Hairdees zit drie hoog in De nieuwe Watertoren. We werken uitsluitend op afspraak — je wordt hier dus nooit even tussendoor geholpen.</p>
+        <span class="label">Kapsalon in Vlaardingen</span>
+        <h1 class="display">Alle tijd, alleen voor jou.</h1>
+        <p class="hero-sub">Drie hoog in De nieuwe Watertoren. We werken uitsluitend op afspraak, zodat je hier nooit even tussendoor wordt geholpen.</p>
         <div class="hero-actions">
-            <a href="tel:+31624318233" class="btn btn-primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Maak een afspraak
-            </a>
-            <a href="#diensten" class="btn btn-outline-light">Bekijk diensten</a>
+            <a href="tel:+31624318233" class="btn btn-light">Maak een afspraak</a>
+            <a href="#diensten" class="link-underline link-underline-light">Bekijk onze diensten</a>
         </div>
     </div>
+    <div class="hero-rule"></div>
 </section>
-
-<!-- Ticker -->
-<div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-        <div class="ticker-group">
-            <span class="ticker-item">36 jaar in het vak</span>
-            <span class="ticker-item">De nieuwe Watertoren</span>
-            <span class="ticker-item">Uitsluitend op afspraak</span>
-            <span class="ticker-item">L'ANZA haarverzorging</span>
-            <span class="ticker-item">Knippen &amp; kleuren</span>
-            <span class="ticker-item">Vlaardingen</span>
-        </div>
-        <div class="ticker-group">
-            <span class="ticker-item">36 jaar in het vak</span>
-            <span class="ticker-item">De nieuwe Watertoren</span>
-            <span class="ticker-item">Uitsluitend op afspraak</span>
-            <span class="ticker-item">L'ANZA haarverzorging</span>
-            <span class="ticker-item">Knippen &amp; kleuren</span>
-            <span class="ticker-item">Vlaardingen</span>
-        </div>
-    </div>
-</div>
 
 <!-- Over Desirée -->
 <section id="over">
-    <div class="container">
+    <div class="shell">
         <div class="about-grid">
             <div class="about-photo reveal">
                 <img src="salon-exterior.jpg" alt="Desirée Kievits voor De nieuwe Watertoren" loading="lazy">
             </div>
-            <div class="about-text reveal reveal-d1">
-                <span class="eyebrow">Over Desirée</span>
-                <h2>Mensen mooier maken, al 36 jaar</h2>
-                <p>Graag stel ik me even voor. Mijn naam is <strong>Desirée Kievits</strong> en ik werk inmiddels 36 jaar in het kappersvak. Na 30 jaar met veel plezier in Rotterdam kwam er een nieuwe uitdaging op mijn pad — dicht bij huis, en ook nog eens op een bijzondere plek.</p>
-                <p>Als zelfstandig ondernemer doe ik nu waar ik nog altijd blij van word: mensen mooier maken en dus <strong>good hairdees</strong> bezorgen.</p>
 
-                <div class="about-stats">
+            <div class="about-text reveal reveal-d1">
+                <span class="label">Over Desirée</span>
+                <h2 class="display">Zesendertig jaar vakmanschap, dicht bij huis</h2>
+                <p>Graag stel ik me even voor. Mijn naam is <strong>Desirée Kievits</strong> en ik werk inmiddels 36 jaar in het kappersvak. Na 30 jaar met veel plezier in Rotterdam kwam er een nieuwe uitdaging op mijn pad — dicht bij huis, en ook nog eens op een bijzondere plek.</p>
+                <p>Als zelfstandig ondernemer doe ik nu waar ik nog altijd blij van word: mensen mooier maken en dus <em>good hairdees</em> bezorgen.</p>
+
+                <div class="about-facts">
                     <div>
-                        <div class="about-stat-value">36</div>
-                        <div class="about-stat-label">jaar ervaring<br>in het kappersvak</div>
+                        <div class="fact-figure">36</div>
+                        <div class="fact-label">Jaar ervaring</div>
                     </div>
                     <div>
-                        <div class="about-stat-value">3<span style="font-size:1.3rem">e</span></div>
-                        <div class="about-stat-label">verdieping van<br>De nieuwe Watertoren</div>
+                        <div class="fact-figure">3<sup>e</sup></div>
+                        <div class="fact-label">Verdieping</div>
                     </div>
                     <div>
-                        <div class="about-stat-value">100<span style="font-size:1.3rem">%</span></div>
-                        <div class="about-stat-label">aandacht, want<br>alleen op afspraak</div>
+                        <div class="fact-figure">1</div>
+                        <div class="fact-label">Afspraak tegelijk</div>
                     </div>
                 </div>
 
-                <p class="signature-intro">Liefs,</p>
+                <p class="signature-line">Liefs,</p>
                 <p class="signature">Desirée</p>
             </div>
         </div>
@@ -128,154 +96,122 @@
 
 <!-- Diensten -->
 <section id="diensten" class="section-warm">
-    <div class="container">
-        <div class="services-head reveal">
-            <div>
-                <span class="eyebrow">Diensten</span>
-                <h2>Alles voor jouw haar</h2>
-                <p class="lead">Van een knipbeurt op maat tot een volledige kleurverandering — met professionele producten en persoonlijk advies.</p>
-            </div>
-            <a href="tarieven.html" class="btn btn-outline">Alle tarieven</a>
+    <div class="shell">
+        <div class="services-intro reveal">
+            <span class="label">Diensten</span>
+            <h2 class="display">Alles voor jouw haar</h2>
+            <p class="body-lead">Van een knipbeurt op maat tot een volledige kleurverandering — met professionele producten en persoonlijk advies.</p>
         </div>
 
-        <div class="services-list">
-            <a href="tarieven.html#knippen" class="service reveal">
-                <span class="service-num">01</span>
+        <div class="menu">
+            <a href="tarieven.html#knippen" class="menu-item reveal">
+                <span class="menu-num">01</span>
                 <span>
-                    <span class="service-title">Knippen</span>
-                    <span class="service-desc">Op maat geknipt, afgestemd op je gezichtsvorm en je levensstijl. Voor dames, heren en kinderen.</span>
+                    <span class="menu-title">Knippen</span>
+                    <span class="menu-desc">Op maat geknipt, afgestemd op je gezichtsvorm en je levensstijl. Voor dames, heren en kinderen.</span>
                 </span>
-                <span class="service-price"><small>vanaf</small>€ 22,50</span>
-                <span class="service-go">Bekijk tarieven
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </span>
+                <span class="menu-from">Vanaf <span>€ 22,50</span></span>
             </a>
 
-            <a href="tarieven.html#kleuren" class="service reveal">
-                <span class="service-num">02</span>
+            <a href="tarieven.html#kleuren" class="menu-item reveal">
+                <span class="menu-num">02</span>
                 <span>
-                    <span class="service-title">Kleuren &amp; balayage</span>
-                    <span class="service-desc">Van een toner of subtiele highlights tot balayage en een volledige kleurverandering.</span>
+                    <span class="menu-title">Kleuren &amp; balayage</span>
+                    <span class="menu-desc">Van een toner of subtiele highlights tot balayage en een volledige kleurverandering.</span>
                 </span>
-                <span class="service-price"><small>vanaf</small>€ 25,00</span>
-                <span class="service-go">Bekijk tarieven
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </span>
+                <span class="menu-from">Vanaf <span>€ 25,00</span></span>
             </a>
 
-            <a href="tarieven.html#wassen-stylen" class="service reveal">
-                <span class="service-num">03</span>
+            <a href="tarieven.html#wassen-stylen" class="menu-item reveal">
+                <span class="menu-num">03</span>
                 <span>
-                    <span class="service-title">Wassen &amp; föhnen</span>
-                    <span class="service-desc">Een ontspannen wasbeurt met een professionele föhnstyling. Klaar voor elke gelegenheid.</span>
+                    <span class="menu-title">Wassen &amp; föhnen</span>
+                    <span class="menu-desc">Een ontspannen wasbeurt met een professionele föhnstyling. Klaar voor elke gelegenheid.</span>
                 </span>
-                <span class="service-price"><small>vanaf</small>€ 37,00</span>
-                <span class="service-go">Bekijk tarieven
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </span>
+                <span class="menu-from">Vanaf <span>€ 37,00</span></span>
             </a>
 
-            <a href="tarieven.html#wenkbrauwen" class="service reveal">
-                <span class="service-num">04</span>
+            <a href="tarieven.html#wenkbrauwen" class="menu-item reveal">
+                <span class="menu-num">04</span>
                 <span>
-                    <span class="service-title">Wenkbrauwen</span>
-                    <span class="service-desc">Henna Brows — je wenkbrauwen in model en in kleur, voor een verzorgde blik.</span>
+                    <span class="menu-title">Wenkbrauwen</span>
+                    <span class="menu-desc">Henna Brows — je wenkbrauwen in model en in kleur, voor een verzorgde blik.</span>
                 </span>
-                <span class="service-price"><small>vanaf</small>€ 12,50</span>
-                <span class="service-go">Bekijk tarieven
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </span>
+                <span class="menu-from">Vanaf <span>€ 12,50</span></span>
             </a>
         </div>
 
-        <p class="services-footnote reveal">Benieuwd naar de volledige prijslijst? <a href="tarieven.html">Bekijk alle tarieven →</a></p>
+        <div class="services-more reveal">
+            <a href="tarieven.html" class="link-underline">Bekijk alle tarieven</a>
+        </div>
     </div>
 </section>
 
 <!-- Quote -->
-<section class="quote-band">
-    <div class="container-narrow quote-inner reveal">
-        <span class="quote-mark">&ldquo;</span>
+<section class="quote">
+    <div class="shell-narrow reveal">
         <p class="quote-text">Bij Hairdees ben ik trots op de vriendschappen die meekomen met mijn klanten, en zorg ik dat elk bezoek een stukje quality time is.</p>
-        <p class="quote-attr">Desirée Kievits<span>Eigenaar van Hairdees</span></p>
+        <div class="quote-rule"></div>
+        <p class="quote-name">Desirée Kievits<span class="quote-role">Eigenaar van Hairdees</span></p>
     </div>
 </section>
 
 <!-- Producten -->
 <section>
-    <div class="container">
-        <div class="products-grid reveal">
-            <div class="products-logo">
+    <div class="shell">
+        <div class="products">
+            <div class="products-mark reveal">
                 <img src="lanza-logo.png" alt="L'ANZA" loading="lazy">
             </div>
-            <div class="products-text">
-                <span class="eyebrow">Onze producten</span>
-                <h2>Wij werken met L'ANZA</h2>
+            <div class="products-text reveal reveal-d1">
+                <span class="label">Onze producten</span>
+                <h2 class="display">Wij werken met L'ANZA</h2>
                 <p>Bij Hairdees kiezen we bewust voor <strong>L'ANZA</strong> — haarverzorging van professionele kwaliteit. De formules combineren natuurlijke ingrediënten met technieken die je haar verzorgen en beschermen, van wortel tot in de puntjes. Zo ga je niet alleen mooier de deur uit, maar ook met gezonder haar.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Contact & locatie -->
+<!-- Contact -->
 <section id="contact" class="section-warm">
-    <div class="container">
+    <div class="shell">
         <div class="contact-grid">
             <div class="reveal">
-                <div class="contact-head">
-                    <span class="eyebrow">Contact &amp; locatie</span>
-                    <h2>Je vindt ons drie hoog</h2>
-                    <p class="lead">De nieuwe Watertoren staat aan de rand van het Oranjepark. Hairdees zit op de derde verdieping, met uitzicht over Vlaardingen.</p>
+                <div class="contact-intro">
+                    <span class="label">Contact &amp; locatie</span>
+                    <h2 class="display">Je vindt ons drie hoog</h2>
+                    <p class="body-lead">De nieuwe Watertoren staat aan de rand van het Oranjepark. Hairdees zit op de derde verdieping, met uitzicht over Vlaardingen.</p>
                 </div>
 
-                <div class="detail-list">
-                    <a href="tel:+31624318233" class="detail">
-                        <span class="detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </span>
-                        <span>
-                            <span class="detail-label">Bellen of appen</span>
-                            <span class="detail-value">06 24 31 82 33</span>
-                        </span>
+                <div class="facts">
+                    <a href="tel:+31624318233" class="fact">
+                        <span class="fact-key">Telefoon</span>
+                        <span class="fact-value">06 24 31 82 33</span>
                     </a>
 
-                    <div class="detail">
-                        <span class="detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </span>
-                        <span>
-                            <span class="detail-label">Adres</span>
-                            <span class="detail-value">Van Linden van den Heuvellweg 2<br>3134 AE Vlaardingen
-                                <small>Navigeer op: Kleine Buitenweide, Vlaardingen</small>
-                            </span>
-                        </span>
+                    <div class="fact">
+                        <span class="fact-key">Adres</span>
+                        <span class="fact-value">Van Linden van den Heuvellweg 2<br>3134 AE Vlaardingen</span>
+                        <span class="fact-note">Navigeer op: Kleine Buitenweide, Vlaardingen</span>
                     </div>
 
-                    <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="detail">
-                        <span class="detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                        </span>
-                        <span>
-                            <span class="detail-label">Instagram</span>
-                            <span class="detail-value">@hairdeesvlaardingen</span>
-                        </span>
+                    <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="fact">
+                        <span class="fact-key">Instagram</span>
+                        <span class="fact-value">@hairdeesvlaardingen</span>
                     </a>
                 </div>
 
-                <div class="hours-card">
+                <div class="appointment">
                     <h3>Uitsluitend op afspraak</h3>
                     <p>We werken zonder vaste openingstijden. Bel of app even, dan plannen we samen een moment dat jou uitkomt.</p>
-                    <div class="hours-actions">
-                        <a href="tel:+31624318233" class="btn btn-dark">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            Bel voor een afspraak
-                        </a>
-                        <a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+                    <div class="appointment-actions">
+                        <a href="tel:+31624318233" class="btn">Bel voor een afspraak</a>
+                        <a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="link-underline">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <div class="map-frame reveal reveal-d1">
+            <div class="map-panel reveal reveal-d1">
                 <iframe
                     title="Kaart met de locatie van Hairdees in Vlaardingen"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=4.34%2C51.91%2C4.37%2C51.93&layer=mapnik&marker=51.918,4.355"
@@ -285,44 +221,35 @@
     </div>
 </section>
 
-<!-- Slot-CTA -->
-<section class="cta-band">
-    <div class="container-narrow reveal">
-        <h2>Tijd voor een goede hairday?</h2>
-        <p class="lead">Bel of app Desirée en we zoeken samen een moment dat jou uitkomt. Tot snel in de Watertoren.</p>
-        <div class="cta-actions">
-            <a href="tel:+31624318233" class="btn btn-dark">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                06 24 31 82 33
-            </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Van+Linden+van+den+Heuvellweg+2+3134+AE+Vlaardingen" target="_blank" rel="noopener" class="btn btn-outline">Plan je route</a>
+<!-- Closing -->
+<section class="closing">
+    <div class="shell-narrow reveal">
+        <h2 class="display">Tijd voor een goede hairday?</h2>
+        <p class="body-lead">Bel of app Desirée en we zoeken samen een moment dat jou uitkomt. Tot snel in de Watertoren.</p>
+        <div class="closing-actions">
+            <a href="tel:+31624318233" class="btn">06 24 31 82 33</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Van+Linden+van+den+Heuvellweg+2+3134+AE+Vlaardingen" target="_blank" rel="noopener" class="link-underline">Plan je route</a>
         </div>
     </div>
 </section>
 
-<!-- WhatsApp -->
-<a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Stuur een WhatsApp-bericht">
+<a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="wa" id="waBtn" aria-label="Stuur een WhatsApp-bericht">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.02 3 3.33 8.69 3.33 15.71c0 2.24.59 4.42 1.7 6.35L3.2 29l7.1-1.86a12.66 12.66 0 0 0 5.74 1.37h.01c7.01 0 12.71-5.69 12.71-12.71S23.05 3 16.04 3zm0 23.32c-1.78 0-3.53-.48-5.06-1.39l-.36-.21-3.75.98 1-3.65-.24-.38a10.53 10.53 0 0 1-1.62-5.63c0-5.83 4.74-10.57 10.58-10.57 2.82 0 5.48 1.1 7.47 3.1a10.5 10.5 0 0 1 3.09 7.48c0 5.83-4.74 10.57-10.57 10.57zm5.8-7.92c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.72.16-.21.32-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.88-1.76-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.72-.98-2.36-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.08 1.3 3.29c.16.21 2.25 3.43 5.45 4.81.76.33 1.36.53 1.82.67.77.25 1.46.21 2.01.13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37z"/></svg>
 </a>
 
-<!-- Footer -->
 <footer class="site-footer">
-    <div class="container">
-        <div class="footer-top">
+    <div class="shell">
+        <div class="footer-grid">
             <div>
                 <div class="footer-logo"><img src="logo-transparent.png" alt="Hairdees"></div>
-                <p class="footer-blurb">De kapsalon van Desirée Kievits, drie hoog in De nieuwe Watertoren in Vlaardingen. Uitsluitend op afspraak.</p>
-                <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="footer-social">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    @hairdeesvlaardingen
-                </a>
+                <p class="footer-note">De kapsalon van Desirée Kievits, drie hoog in De nieuwe Watertoren in Vlaardingen. Uitsluitend op afspraak.</p>
             </div>
 
             <div class="footer-col">
                 <h4>Menu</h4>
                 <ul>
-                    <li><a href="#diensten">Diensten</a></li>
                     <li><a href="#over">Over Desirée</a></li>
+                    <li><a href="#diensten">Diensten</a></li>
                     <li><a href="tarieven.html">Tarieven</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -333,12 +260,13 @@
                 <p>
                     Van Linden van den Heuvellweg 2<br>
                     3134 AE Vlaardingen<br>
-                    <a href="tel:+31624318233">06 24 31 82 33</a>
+                    <a href="tel:+31624318233">06 24 31 82 33</a><br>
+                    <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener">@hairdeesvlaardingen</a>
                 </p>
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-base">
             <span>© 2026 Hairdees — have a good hairday</span>
             <span>KVK 90545567</span>
         </div>
@@ -347,14 +275,18 @@
 
 <script>
 (function () {
-    // Mobile menu
+    var header = document.getElementById('siteHeader');
     var toggle = document.getElementById('navToggle');
     var mobileNav = document.getElementById('mobileNav');
+    var wa = document.getElementById('waBtn');
+    var solidFrom = header.hasAttribute('data-always-solid') ? -1 : null;
 
     toggle.addEventListener('click', function () {
         var open = mobileNav.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', String(open));
         toggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+        if (open) header.classList.add('is-solid');
+        else syncHeader();
     });
 
     mobileNav.querySelectorAll('a').forEach(function (link) {
@@ -364,13 +296,17 @@
         });
     });
 
-    // Header border on scroll
-    var header = document.getElementById('siteHeader');
-    window.addEventListener('scroll', function () {
-        header.classList.toggle('scrolled', window.scrollY > 24);
-    }, { passive: true });
+    function syncHeader() {
+        if (solidFrom === -1) { header.classList.add('is-solid'); return; }
+        var past = window.scrollY > Math.max(120, window.innerHeight * 0.72);
+        header.classList.toggle('is-solid', past || mobileNav.classList.contains('is-open'));
+        if (wa) wa.classList.toggle('is-shown', past);
+    }
 
-    // Reveal on scroll
+    window.addEventListener('scroll', syncHeader, { passive: true });
+    window.addEventListener('resize', syncHeader);
+    syncHeader();
+
     var items = document.querySelectorAll('.reveal');
     if (!('IntersectionObserver' in window)) {
         items.forEach(function (el) { el.classList.add('is-visible'); });
@@ -383,7 +319,7 @@
                 io.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -70px 0px' });
 
     items.forEach(function (el) { io.observe(el); });
 })();

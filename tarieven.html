@@ -8,195 +8,176 @@
 <link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Header -->
-<header class="site-header" id="siteHeader">
+<header class="site-header is-solid" id="siteHeader" data-always-solid>
     <div class="header-inner">
         <a href="index.html" class="header-logo" aria-label="Hairdees — naar de homepage">
             <img src="logo-transparent.png" alt="Hairdees">
         </a>
 
         <ul class="header-nav">
-            <li><a href="index.html#diensten">Diensten</a></li>
             <li><a href="index.html#over">Over Desirée</a></li>
+            <li><a href="index.html#diensten">Diensten</a></li>
             <li><a href="tarieven.html" class="is-current" aria-current="page">Tarieven</a></li>
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
 
-        <div class="header-phone">
-            <a href="tel:+31624318233" class="header-phone-number">06 24 31 82 33</a>
-            <a href="tel:+31624318233" class="header-cta">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Bellen
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobileNav">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+        <a href="tel:+31624318233" class="header-call">06 24 31 82 33</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobileNav">
+            <span></span><span></span><span></span>
+        </button>
     </div>
+
     <ul class="mobile-nav" id="mobileNav">
-        <li><a href="index.html#diensten">Diensten</a></li>
         <li><a href="index.html#over">Over Desirée</a></li>
+        <li><a href="index.html#diensten">Diensten</a></li>
         <li><a href="tarieven.html">Tarieven</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="tel:+31624318233">Bel 06 24 31 82 33</a></li>
+        <li><a href="tel:+31624318233">06 24 31 82 33</a></li>
     </ul>
 </header>
 
-<!-- Page hero -->
-<section class="page-hero">
-    <div class="container">
-        <span class="eyebrow">Tarieven</span>
-        <h1>Wat kost het?</h1>
-        <p class="lead">Alle prijzen op een rij. Weet je niet precies wat je nodig hebt? Bel even, dan denken we mee.</p>
+<section class="page-head">
+    <div class="shell">
+        <span class="label">Tarieven</span>
+        <h1 class="display">Onze prijzen</h1>
+        <p class="body-lead">Weet je niet precies wat je nodig hebt? Bel even, dan denken we graag met je mee.</p>
     </div>
 </section>
 
-<!-- Prijzen -->
-<section class="pricing">
-    <div class="container">
-        <div class="price-grid">
+<section class="rates">
+    <div class="shell">
 
-            <div class="price-card reveal" id="knippen">
-                <div class="price-card-head">
-                    <span class="num">01</span>
-                    <h2>Knippen</h2>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Heren</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 31,50</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Student</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 26,00</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Kind</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 22,50</span>
-                </div>
+        <div class="rate-group reveal" id="knippen">
+            <div class="rate-head">
+                <span class="rate-num">01</span>
+                <h2>Knippen</h2>
             </div>
-
-            <div class="price-card reveal reveal-d1" id="kleuren">
-                <div class="price-card-head">
-                    <span class="num">02</span>
-                    <h2>Kleuren</h2>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Uitgroei</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 53,00 – € 60,00</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Spoeling</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 36,50</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Toner</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 25,00</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Highlights <em>vanaf</em></span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 37,50</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Heel</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 95,00</span>
-                </div>
-                <div class="price-row price-row-feature">
-                    <span class="price-row-name">Balayage <em>vanaf</em></span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 100,00</span>
-                </div>
+            <div class="rate">
+                <span class="rate-name">Heren</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 31,50</span>
             </div>
-
-            <div class="price-card reveal" id="wassen-stylen">
-                <div class="price-card-head">
-                    <span class="num">03</span>
-                    <h2>Wassen &amp; stylen</h2>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Wassen, knippen, föhnen</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 53,00</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Wassen, knippen, drogen</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 41,50</span>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Wassen, föhnen</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 37,00 – € 43,50</span>
-                </div>
+            <div class="rate">
+                <span class="rate-name">Student</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 26,00</span>
             </div>
-
-            <div class="price-card reveal reveal-d1" id="wenkbrauwen">
-                <div class="price-card-head">
-                    <span class="num">04</span>
-                    <h2>Wenkbrauwen</h2>
-                </div>
-                <div class="price-row">
-                    <span class="price-row-name">Henna Brows</span>
-                    <span class="price-row-dots"></span>
-                    <span class="price-row-value">€ 12,50</span>
-                </div>
+            <div class="rate">
+                <span class="rate-name">Kind</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 22,50</span>
             </div>
+        </div>
 
-            <p class="price-note reveal">Prijzen zijn inclusief btw. De uiteindelijke prijs hangt af van je haarlengte en de behandeling — Desirée vertelt je dat vooraf.</p>
+        <div class="rate-group reveal" id="kleuren">
+            <div class="rate-head">
+                <span class="rate-num">02</span>
+                <h2>Kleuren</h2>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Uitgroei</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 53,00 – € 60,00</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Spoeling</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 36,50</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Toner</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 25,00</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Highlights <em>vanaf</em></span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 37,50</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Heel</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 95,00</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Balayage <em>vanaf</em></span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 100,00</span>
+            </div>
+        </div>
+
+        <div class="rate-group reveal" id="wassen-stylen">
+            <div class="rate-head">
+                <span class="rate-num">03</span>
+                <h2>Wassen &amp; stylen</h2>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Wassen, knippen, föhnen</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 53,00</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Wassen, knippen, drogen</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 41,50</span>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Wassen, föhnen</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 37,00 – € 43,50</span>
+            </div>
+        </div>
+
+        <div class="rate-group reveal" id="wenkbrauwen">
+            <div class="rate-head">
+                <span class="rate-num">04</span>
+                <h2>Wenkbrauwen</h2>
+            </div>
+            <div class="rate">
+                <span class="rate-name">Henna Brows</span>
+                <span class="rate-fill"></span>
+                <span class="rate-price">€ 12,50</span>
+            </div>
+        </div>
+
+        <p class="rates-note reveal">Prijzen zijn inclusief btw. De uiteindelijke prijs hangt af van je haarlengte en de behandeling — Desirée bespreekt dat vooraf met je.</p>
+    </div>
+</section>
+
+<section class="closing">
+    <div class="shell-narrow reveal">
+        <h2 class="display">Een afspraak maken?</h2>
+        <p class="body-lead">We werken uitsluitend op afspraak, zodat je onze volledige aandacht krijgt.</p>
+        <div class="closing-actions">
+            <a href="tel:+31624318233" class="btn">06 24 31 82 33</a>
+            <a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="link-underline">WhatsApp</a>
         </div>
     </div>
 </section>
 
-<!-- Slot-CTA -->
-<section class="cta-band">
-    <div class="container-narrow reveal">
-        <h2>Een afspraak maken?</h2>
-        <p class="lead">We werken uitsluitend op afspraak, zodat je onze volledige aandacht krijgt. Bel of app even.</p>
-        <div class="cta-actions">
-            <a href="tel:+31624318233" class="btn btn-dark">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                06 24 31 82 33
-            </a>
-            <a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
-        </div>
-    </div>
-</section>
-
-<!-- WhatsApp -->
-<a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Stuur een WhatsApp-bericht">
+<a href="https://wa.me/31624318233" target="_blank" rel="noopener" class="wa" id="waBtn" aria-label="Stuur een WhatsApp-bericht">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.02 3 3.33 8.69 3.33 15.71c0 2.24.59 4.42 1.7 6.35L3.2 29l7.1-1.86a12.66 12.66 0 0 0 5.74 1.37h.01c7.01 0 12.71-5.69 12.71-12.71S23.05 3 16.04 3zm0 23.32c-1.78 0-3.53-.48-5.06-1.39l-.36-.21-3.75.98 1-3.65-.24-.38a10.53 10.53 0 0 1-1.62-5.63c0-5.83 4.74-10.57 10.58-10.57 2.82 0 5.48 1.1 7.47 3.1a10.5 10.5 0 0 1 3.09 7.48c0 5.83-4.74 10.57-10.57 10.57zm5.8-7.92c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.72.16-.21.32-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.88-1.76-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.72-.98-2.36-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.08 1.3 3.29c.16.21 2.25 3.43 5.45 4.81.76.33 1.36.53 1.82.67.77.25 1.46.21 2.01.13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37z"/></svg>
 </a>
 
-<!-- Footer -->
 <footer class="site-footer">
-    <div class="container">
-        <div class="footer-top">
+    <div class="shell">
+        <div class="footer-grid">
             <div>
                 <div class="footer-logo"><img src="logo-transparent.png" alt="Hairdees"></div>
-                <p class="footer-blurb">De kapsalon van Desirée Kievits, drie hoog in De nieuwe Watertoren in Vlaardingen. Uitsluitend op afspraak.</p>
-                <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="footer-social">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    @hairdeesvlaardingen
-                </a>
+                <p class="footer-note">De kapsalon van Desirée Kievits, drie hoog in De nieuwe Watertoren in Vlaardingen. Uitsluitend op afspraak.</p>
             </div>
 
             <div class="footer-col">
                 <h4>Menu</h4>
                 <ul>
-                    <li><a href="index.html#diensten">Diensten</a></li>
                     <li><a href="index.html#over">Over Desirée</a></li>
+                    <li><a href="index.html#diensten">Diensten</a></li>
                     <li><a href="tarieven.html">Tarieven</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
@@ -207,12 +188,13 @@
                 <p>
                     Van Linden van den Heuvellweg 2<br>
                     3134 AE Vlaardingen<br>
-                    <a href="tel:+31624318233">06 24 31 82 33</a>
+                    <a href="tel:+31624318233">06 24 31 82 33</a><br>
+                    <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener">@hairdeesvlaardingen</a>
                 </p>
             </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-base">
             <span>© 2026 Hairdees — have a good hairday</span>
             <span>KVK 90545567</span>
         </div>
@@ -221,8 +203,11 @@
 
 <script>
 (function () {
+    var header = document.getElementById('siteHeader');
     var toggle = document.getElementById('navToggle');
     var mobileNav = document.getElementById('mobileNav');
+    var wa = document.getElementById('waBtn');
+    var alwaysSolid = header.hasAttribute('data-always-solid');
 
     toggle.addEventListener('click', function () {
         var open = mobileNav.classList.toggle('is-open');
@@ -237,10 +222,13 @@
         });
     });
 
-    var header = document.getElementById('siteHeader');
-    window.addEventListener('scroll', function () {
-        header.classList.toggle('scrolled', window.scrollY > 24);
-    }, { passive: true });
+    function sync() {
+        if (!alwaysSolid) header.classList.toggle('is-solid', window.scrollY > 120);
+        if (wa) wa.classList.toggle('is-shown', window.scrollY > 260);
+    }
+
+    window.addEventListener('scroll', sync, { passive: true });
+    sync();
 
     var items = document.querySelectorAll('.reveal');
     if (!('IntersectionObserver' in window)) {
@@ -254,7 +242,7 @@
                 io.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -70px 0px' });
 
     items.forEach(function (el) { io.observe(el); });
 })();
