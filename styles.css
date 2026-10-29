@@ -136,13 +136,25 @@ h2.display { font-size: clamp(2rem, 3.8vw, 3.1rem); }
     transition: height 0.45s var(--ease);
 }
 
-.header-logo { display: flex; align-items: center; flex-shrink: 0; }
+/* Two artwork files rather than an inverted one: the filter flattened
+   the sand script to solid white and lost half the mark's character. */
+.header-logo {
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    line-height: 0;
+}
 
 .header-logo img {
-    height: 46px;
+    height: 64px;
     width: auto;
-    filter: brightness(0) invert(1);
-    transition: filter 0.45s var(--ease), height 0.45s var(--ease);
+    transition: height 0.45s var(--ease), opacity 0.45s var(--ease);
+}
+
+.header-logo .logo-on-light {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
 }
 
 .header-nav {
@@ -185,10 +197,15 @@ h2.display { font-size: clamp(2rem, 3.8vw, 3.1rem); }
 
 .header-call {
     flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 13px 26px;
     transition: background 0.3s var(--ease), border-color 0.3s var(--ease), color 0.3s var(--ease);
 }
+
+.header-call .call-icon { display: none; width: 18px; height: 18px; }
 
 .header-call:hover { background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.75); }
 
@@ -200,8 +217,10 @@ h2.display { font-size: clamp(2rem, 3.8vw, 3.1rem); }
     border-bottom-color: var(--line-faint);
 }
 
-.site-header.is-solid .header-inner { height: 82px; }
-.site-header.is-solid .header-logo img { filter: none; height: 38px; }
+.site-header.is-solid .header-inner { height: 86px; }
+.site-header.is-solid .header-logo img { height: 50px; }
+.site-header.is-solid .header-logo .logo-on-light { opacity: 1; }
+.site-header.is-solid .header-logo .logo-on-dark { opacity: 0; }
 .site-header.is-solid .header-nav a { color: var(--ink-mid); }
 .site-header.is-solid .header-nav a:hover { color: var(--ink); }
 .site-header.is-solid .header-call { color: var(--ink); border-color: var(--line); }
@@ -703,7 +722,7 @@ a.fact:hover .fact-value { color: var(--sand-text); }
     border-bottom: 1px solid var(--line-dark);
 }
 
-.footer-logo img { height: 48px; width: auto; filter: brightness(0) invert(1); opacity: 0.9; }
+.footer-logo img { height: 72px; width: auto; }
 
 .footer-note {
     margin-top: 26px;
@@ -851,16 +870,20 @@ a.fact:hover .fact-value { color: var(--sand-text); }
 @media (max-width: 900px) {
     .header-nav { display: none; }
     .nav-toggle { display: flex; }
-    .header-inner { height: 78px; }
-    .header-logo img { height: 34px; }
-    .site-header.is-solid .header-inner { height: 70px; }
-    .site-header.is-solid .header-logo img { height: 32px; }
-    .header-call { padding: 11px 18px; font-size: 0.66rem; letter-spacing: 0.14em; }
+    .header-inner { height: 82px; }
+    .header-logo img { height: 42px; }
+    .site-header.is-solid .header-inner { height: 74px; }
+    .site-header.is-solid .header-logo img { height: 38px; }
+    /* the full number cannot sit beside a logo this size on a phone,
+       so the call action collapses to an icon */
+    .header-call { padding: 0; width: 46px; height: 46px; }
+    .header-call .call-text { display: none; }
+    .header-call .call-icon { display: block; }
 
     .mobile-nav {
         display: flex;
         position: fixed;
-        top: 78px;
+        top: 82px;
         left: 0;
         width: 100%;
         background: var(--bg);
