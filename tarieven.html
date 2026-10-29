@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <a href="index.html" class="nav-logo">
-            <span class="nav-brand">Hairdees</span>
+            <span class="nav-brand">HAIRDEES</span>
         </a>
         <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
             <span></span><span></span><span></span>
@@ -35,9 +35,8 @@
 
 <!-- Page Header -->
 <section class="page-header">
-    <div class="page-header-waterline"></div>
     <div class="container">
-        <span class="floor-tag">Prijzen</span>
+        <span class="section-tag">Prijzen</span>
         <h1>Tarieven</h1>
         <p>Transparante prijzen voor al onze diensten. Alle behandelingen uitsluitend op afspraak.</p>
     </div>
@@ -159,7 +158,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:10px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Bel 06 24 31 82 33
             </a>
-            <p class="price-cta-note">Uitsluitend op afspraak — we plannen graag een tijdstip dat jou uitkomt.</p>
+            <p class="price-cta-note">Uitsluitend op afspraak — we plannen graag een tijdstel dat jou uitkomt.</p>
         </div>
 
     </div>
@@ -174,8 +173,8 @@
 <footer class="footer">
     <div class="container footer-content">
         <div class="footer-left">
-            <span class="footer-brand">Hairdees</span>
-            <p class="footer-tagline">have a good hairdees</p>
+            <span class="footer-brand">HAIRDEES</span>
+            <p class="footer-tagline">have a good hair day</p>
             <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
@@ -183,7 +182,7 @@
         <div class="footer-right">
             <p class="footer-name">Hairdees — Dé kapster in Vlaardingen</p>
             <p class="footer-contact">06 24 31 82 33 · <a href="tel:0624318233">Bel of stuur een berichtje</a></p>
-            <p class="footer-copy">© 2026 Hairdees · KVK 90545567</p>
+            <p class="footer-copy">© 2026 Hairdees · KVK 90545567 · Alle rechten voorbehouden.</p>
         </div>
     </div>
 </footer>
@@ -197,18 +196,17 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         document.getElementById('navLinks').classList.remove('nav-open');
     });
 });
-const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) navbar.classList.add('scrolled');
-    else navbar.classList.remove('scrolled');
-}, { passive: true });
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+});
 
 // Scroll reveal animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
+            entry.target.classList.add('visible');
         }
     });
 }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });

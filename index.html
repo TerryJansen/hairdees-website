@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <a href="#home" class="nav-logo">
-            <span class="nav-brand">Hairdees</span>
+            <span class="nav-brand">HAIRDEES</span>
         </a>
         <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
             <span></span><span></span><span></span>
@@ -33,25 +33,18 @@
     </div>
 </nav>
 
-<!-- Floor rail: tracks the climb up the tower as you scroll -->
-<div class="floor-rail" id="floorRail" aria-hidden="true">
-    <div class="floor-rail-track"></div>
-    <div class="floor-rail-fill" id="floorRailFill"></div>
-    <div class="floor-rail-readout">
-        <span class="floor-rail-meters" id="floorMeters">0m</span>
-        <span class="floor-rail-label" id="floorLabel">BEGANE GROND</span>
-    </div>
-</div>
-
 <!-- Hero -->
-<header id="home" class="hero" data-floor="0" data-floor-label="Begane grond">
+<header id="home" class="hero">
     <div class="hero-bg-image"></div>
     <div class="hero-bg"></div>
-    <div class="hero-waterline"></div>
     <div class="hero-content">
-        <p class="hero-eyebrow"><span class="dot"></span>De nieuwe Watertoren, Vlaardingen</p>
-        <h1 class="hero-title">Have a good <em>hairdees</em></h1>
-        <p class="hero-subtitle">Een warme plek, drie verdiepingen boven de grond, waar persoonlijke aandacht en vakmanschap samenkomen. Knippen, kleuren, wassen en föhnen — uitsluitend op afspraak.</p>
+        <div class="hero-brand">
+            <h1 class="brand-name">HAIRDEES</h1>
+            <p class="hero-tagline">have a good hair day</p>
+        </div>
+        <div class="hero-divider"></div>
+        <h2 class="hero-title">Dé kapster in Vlaardingen</h2>
+        <p class="hero-subtitle">Een warme plek in De nieuwe Watertoren waar persoonlijke aandacht en vakmanschap samenkomen. Knippen, kleuren, wassen en föhnen — uitsluitend op afspraak.</p>
         <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Maak een afspraak</a>
             <a href="#over" class="btn btn-ghost">Maak kennis met Desirée</a>
@@ -60,14 +53,14 @@
 </header>
 
 <!-- About Desirée -->
-<section id="over" class="about" data-floor="11" data-floor-label="Op weg naar boven">
+<section id="over" class="about">
     <div class="container">
         <div class="about-grid">
-            <div class="about-photo reveal">
+            <div class="about-photo">
                 <img src="salon-exterior.png" alt="Desirée voor De nieuwe Watertoren" loading="lazy">
             </div>
-            <div class="about-text reveal">
-                <span class="floor-tag"><span class="num">01</span> Maak kennis met Desirée</span>
+            <div class="about-text">
+                <span class="section-tag">Maak kennis met Desirée</span>
                 <h2>36 jaar passie voor het kappersvak</h2>
                 <p>Graag wil ik me even aan jullie voorstellen. Mijn naam is <strong>Desirée Kievits</strong> en inmiddels al 36 jaar werkzaam in het kappersvak. Na 30 jaar met plezier in Rotterdam te hebben gewerkt, is er een nieuwe uitdaging op m'n pad gekomen — dichtbij huis en ook nog eens op een unieke locatie!</p>
                 <p>Als zelfstandig ondernemer ga ik nu verder met mijn werk waar ik nog steeds heel blij van wordt: mensen mooier maken en dus <em>good hairdees</em> bezorgen.</p>
@@ -84,175 +77,139 @@
 <section class="salon-banner">
     <img src="salon-interior.png" alt="Het interieur van Hairdees kapsalon" loading="lazy">
     <div class="salon-banner-overlay">
-        <div class="salon-banner-content reveal">
-            <p class="salon-banner-quote">"Bij Hairdees ben ik trots op de vriendschappen die meekomen met mijn klanten en zorg ik dat elk bezoek een stukje quality time is."</p>
-            <p class="salon-banner-attr">— DESIRÉE</p>
+        <div class="salon-banner-content">
+            <p class="salon-banner-quote">"Bij HairDees ben ik trots op de vriendschappen die meekomen met mijn klanten en zorg ik dat elk bezoek een stukje quality time is."</p>
+            <p class="salon-banner-attr">— Desirée</p>
         </div>
     </div>
 </section>
 
 <!-- Lanza Products -->
 <section class="lanza">
-    <div class="container lanza-content reveal">
-        <div class="lanza-logo-wrap">
-            <img src="lanza-logo.png" alt="L'ANZA" class="lanza-logo">
-        </div>
+    <div class="container lanza-content">
+        <span class="section-tag">Onze producten</span>
         <h2>Wij werken met L'ANZA</h2>
         <p>Bij Hairdees kiezen we bewust voor <strong>L'ANZA</strong> — hoogwaardige haarverzorging van professionele kwaliteit. L'ANZA staat bekend om zijn innovatieve formules met natuurlijke ingrediënten die je haar verzorgen en beschermen, van wortel tot in de puntjes. Zo verlaat jij de salon niet alleen mooier, maar ook gezonder.</p>
     </div>
 </section>
 
 <!-- Services -->
-<section id="diensten" class="services" data-floor="22" data-floor-label="Behandelkamer">
+<section id="diensten" class="services">
     <div class="container">
-        <div class="section-header reveal">
-            <span class="floor-tag"><span class="num">02</span> Onze diensten</span>
+        <div class="section-header">
+            <span class="section-tag">Onze diensten</span>
             <h2>Alles voor jouw haar</h2>
             <p>Van een eenvoudige knipbeurt tot een volledige transformatie — met hoogwaardige producten en persoonlijk advies.</p>
         </div>
-        <div class="services-list">
-            <a href="tarieven.html#knippen" class="service-row reveal">
+        <div class="services-grid">
+            <a href="tarieven.html#knippen" class="service-card">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
                 </div>
-                <div class="service-body">
-                    <h3>Knippen</h3>
-                    <p>Op maat geknipt, afgestemd op je gezichtsvorm en levensstijl. Voor mannen en vrouwen.</p>
-                </div>
-                <span class="service-link">Bekijk tarieven <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                <h3>Knippen</h3>
+                <p>Op maat geknipt, afgestemd op je gezichtsvorm en levensstijl. Voor mannen en vrouwen.</p>
+                <span class="service-link">Bekijk tarieven →</span>
             </a>
-            <a href="tarieven.html#kleuren" class="service-row reveal">
+            <a href="tarieven.html#kleuren" class="service-card">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18 4.5 4.5 0 0 0 0-9 4.5 4.5 0 0 1 0-9z"/></svg>
                 </div>
-                <div class="service-body">
-                    <h3>Kleuren</h3>
-                    <p>Van subtiele highlights tot een gedurfde kleurverandering. Met haarvriendelijke producten van hoge kwaliteit.</p>
-                </div>
-                <span class="service-link">Bekijk tarieven <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                <h3>Kleuren</h3>
+                <p>Van subtiele highlights tot een gedurfde kleurverandering. Met haarvriendelijke producten van hoge kwaliteit.</p>
+                <span class="service-link">Bekijk tarieven →</span>
             </a>
-            <a href="tarieven.html#wassen-stylen" class="service-row reveal">
+            <a href="tarieven.html#wassen-stylen" class="service-card">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><circle cx="12" cy="14" r="8"/><path d="M12 14v8"/></svg>
                 </div>
-                <div class="service-body">
-                    <h3>Wassen &amp; Föhnen</h3>
-                    <p>Een ontspannen wasbeurt gevolgd door een professionele föhn-styling. Klaar voor elke gelegenheid.</p>
-                </div>
-                <span class="service-link">Bekijk tarieven <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                <h3>Wassen & Föhnen</h3>
+                <p>Een ontspannen wasbeurt gevolgd door een professionele föhn-styling. Klaar voor elke gelegenheid.</p>
+                <span class="service-link">Bekijk tarieven →</span>
             </a>
-            <a href="tarieven.html#wenkbrauwen" class="service-row reveal">
+            <a href="tarieven.html#wenkbrauwen" class="service-card">
                 <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                 </div>
-                <div class="service-body">
-                    <h3>Behandelingen</h3>
-                    <p>Haarverzorgingsbehandelingen en oliebehandelingen. Geef je haar de aandacht die het verdient.</p>
-                </div>
-                <span class="service-link">Bekijk tarieven <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                <h3>Behandelingen</h3>
+                <p>Haarverzorgingsbehandelingen en oliebehandelingen. Geef je haar de aandacht die het verdient.</p>
+                <span class="service-link">Bekijk tarieven →</span>
             </a>
         </div>
     </div>
 </section>
 
 <!-- Location -->
-<section id="locatie" class="location" data-floor="33" data-floor-label="Hairdees — 3e verdieping">
+<section id="locatie" class="location">
     <div class="container">
-        <div class="section-header reveal">
-            <span class="floor-tag"><span class="num">03</span> Waar vind je ons</span>
+        <div class="section-header">
+            <span class="section-tag">Waar vind je ons</span>
             <h2>De nieuwe Watertoren, Vlaardingen</h2>
             <p>Een unieke locatie aan de rand van het Oranjepark, op de derde verdieping met een prachtig uitzicht.</p>
         </div>
-        <div class="location-grid">
-            <div class="tower-diagram reveal" id="towerDiagram">
-                <svg viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
-                    <path class="tower-fill" d="M70,400 L85,150 L55,150 L55,70 L100,30 L145,70 L145,150 L115,150 L130,400 Z"/>
-                    <path class="tower-draw" d="M70,400 L85,150 L55,150 L55,70 L100,30 L145,70 L145,150 L115,150 L130,400 Z"/>
-                    <line class="tower-draw" x1="20" y1="400" x2="180" y2="400"/>
-
-                    <line class="tower-marker-line" x1="130" y1="400" x2="165" y2="400"/>
-                    <text class="tower-level-text" x="168" y="403">0M</text>
-
-                    <line class="tower-marker-line" x1="92" y1="296" x2="165" y2="296"/>
-                    <text class="tower-level-text" x="168" y="299">11M</text>
-
-                    <line class="tower-marker-line" x1="85" y1="191" x2="165" y2="191"/>
-                    <text class="tower-level-text" x="168" y="194">22M</text>
-
-                    <line class="tower-marker-line" x1="80" y1="87" x2="165" y2="87" stroke-width="1.6"/>
-                    <text class="tower-marker-text" x="168" y="84">33M</text>
-                    <text class="tower-marker-text" x="168" y="94">HAIRDEES</text>
-
-                    <line class="tower-marker-line" x1="100" y1="30" x2="165" y2="30"/>
-                    <text class="tower-level-text" x="168" y="33">39M</text>
-                </svg>
-            </div>
-            <div class="location-text reveal">
-                <h3>Hairdees</h3>
-                <p>De nieuwe Watertoren<br>
-                Van Linden van den Heuvellweg 2<br>
-                3134 AE Vlaardingen</p>
-                <p class="location-note">Voor navigatie: Kleine Buitenweide, Vlaardingen</p>
-                <div class="location-map">
-                    <iframe
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=4.34%2C51.91%2C4.37%2C51.93&layer=mapnik&marker=51.918,4.355"
-                        width="100%" height="260" style="border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+        <div class="location-card">
+            <div class="location-info">
+                <div class="location-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="location-text">
+                    <h3>Hairdees</h3>
+                    <p>De nieuwe Watertoren<br>
+                    Van Linden van den Heuvellweg 2<br>
+                    3134 AE Vlaardingen</p>
+                    <p class="location-note"><em>Voor navigatie: Kleine Buitenweide, Vlaardingen</em></p>
                 </div>
             </div>
+            <div class="location-map">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=4.34%2C51.91%2C4.37%2C51.93&layer=mapnik&marker=51.918,4.355"
+                    width="100%" height="300" style="border:0; border-radius:14px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-        <div class="location-history reveal">
+        <div class="location-history">
             <p>Vroeger diende deze iconische toren de mensen met één van de meest primaire levensbehoeften: water. Van eind 1955 tot halverwege de jaren '80 kwam het water uit de kraan in Vlaardingen vanuit deze 39 meter hoge watertoren. Nu is het de plek waar Desirée en Daphne Klos samen een geweldig leuke plek hebben — met een prachtig uitzicht.</p>
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="contact" data-floor="39" data-floor-label="Top van de toren">
+<section id="contact" class="contact">
     <div class="container">
-        <div class="section-header reveal">
-            <span class="floor-tag"><span class="num">04</span> Contact</span>
+        <div class="section-header">
+            <span class="section-tag">Contact</span>
             <h2>Maak een afspraak</h2>
             <p>Wij werken uitsluitend op afspraak — zodat we jou 100% aandacht kunnen geven. Bel of stuur een berichtje.</p>
         </div>
-        <div class="contact-list">
-            <a href="tel:0624318233" class="contact-item reveal">
+        <div class="contact-cards">
+            <a href="tel:0624318233" class="contact-card">
                 <div class="contact-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
-                <div>
-                    <h3>Bel of stuur een berichtje</h3>
-                    <p class="contact-phone">06 24 31 82 33</p>
-                    <span class="contact-action">Tik om te bellen →</span>
-                </div>
+                <h3>Bel of stuur een berichtje</h3>
+                <p class="contact-phone">06 24 31 82 33</p>
+                <span class="contact-action">Tik om te bellen →</span>
             </a>
-            <div class="contact-item reveal">
+            <div class="contact-card">
                 <div class="contact-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 </div>
-                <div>
-                    <h3>Uitsluitend op afspraak</h3>
-                    <p>Geen vaste openingstijden — we plannen een tijdstip dat jou uitkomt.</p>
-                </div>
+                <h3>Uitsluitend op afspraak</h3>
+                <p>Geen vaste openingstijden — we plannen een tijdstel dat jou uitkomt.</p>
             </div>
-            <div class="contact-item reveal">
+            <div class="contact-card">
                 <div class="contact-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
-                <div>
-                    <h3>De nieuwe Watertoren</h3>
-                    <p>Van Linden van den Heuvellweg 2<br>3134 AE Vlaardingen</p>
-                </div>
+                <h3>De nieuwe Watertoren</h3>
+                <p>Van Linden van den Heuvellweg 2<br>3134 AE Vlaardingen</p>
             </div>
-            <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="contact-item reveal">
+            <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="contact-card">
                 <div class="contact-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 </div>
-                <div>
-                    <h3>Volg ons op Instagram</h3>
-                    <p>@hairdeesvlaardingen</p>
-                    <span class="contact-action">Bekijk onze foto's →</span>
-                </div>
+                <h3>Volg ons op Instagram</h3>
+                <p>@hairdeesvlaardingen</p>
+                <span class="contact-action">Bekijk onze foto's →</span>
             </a>
         </div>
     </div>
@@ -267,8 +224,8 @@
 <footer class="footer">
     <div class="container footer-content">
         <div class="footer-left">
-            <span class="footer-brand">Hairdees</span>
-            <p class="footer-tagline">have a good hairdees</p>
+            <span class="footer-brand">HAIRDEES</span>
+            <p class="footer-tagline">have a good hair day</p>
             <a href="https://www.instagram.com/hairdeesvlaardingen/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
@@ -276,7 +233,7 @@
         <div class="footer-right">
             <p class="footer-name">Hairdees — Dé kapster in Vlaardingen</p>
             <p class="footer-contact">06 24 31 82 33 · <a href="tel:0624318233">Bel of stuur een berichtje</a></p>
-            <p class="footer-copy">© 2026 Hairdees · KVK 90545567</p>
+            <p class="footer-copy">© 2026 Hairdees · KVK 90545567 · Alle rechten voorbehouden.</p>
         </div>
     </div>
 </footer>
@@ -290,48 +247,12 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         document.getElementById('navLinks').classList.remove('nav-open');
     });
 });
-
 // Navbar shadow on scroll
-const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) navbar.classList.add('scrolled');
-    else navbar.classList.remove('scrolled');
-}, { passive: true });
-
-// Reveal-on-scroll
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            revealObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-// Floor rail — tracks which "floor" of the tower is in view
-const floorSections = document.querySelectorAll('[data-floor]');
-const floorMetersEl = document.getElementById('floorMeters');
-const floorLabelEl = document.getElementById('floorLabel');
-const floorRailFill = document.getElementById('floorRailFill');
-const TOP_METERS = 39;
-
-if (floorSections.length) {
-    const floorObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const meters = entry.target.getAttribute('data-floor');
-                const label = entry.target.getAttribute('data-floor-label');
-                floorMetersEl.textContent = meters + 'm';
-                floorLabelEl.textContent = label.toUpperCase();
-                floorRailFill.style.height = Math.min(100, (meters / TOP_METERS) * 100) + '%';
-            }
-        });
-    }, { threshold: 0.5 });
-
-    floorSections.forEach(section => floorObserver.observe(section));
-}
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+});
 </script>
 
 </body>
